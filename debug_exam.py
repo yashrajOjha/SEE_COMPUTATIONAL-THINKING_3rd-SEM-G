@@ -50,6 +50,9 @@ def uniqueUpdate(data1, data2):
                 dupKeys[k] = [v1, v2]
                 # Remove (k, v1) from data1
                 del data1[k]
+            elif v1==v2:
+                #when keys are same and the value is also the same, nothing is added to the dictionary
+                continue
             else:
                 # Add (k, v2) to data1
                 data1[k] = v2
